@@ -5,11 +5,55 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <title>calculator</title>
 </head>
 
 <body>
-
+    <div class="container d-flex justify-content-center">
+        <div class="calculator">
+            <!-- calculate view -->
+            <div class="calculate-view"><span class="m-3"></span></div>
+            <!-- calculate keyboard -->
+            <div class="calculator-keyboard text-center mt-5">
+                <div class="neomprphism-btn neo-btn-yellow" id="reset"><span>C</span></div>
+                <div class="neomprphism-btn neo-btn-pink num"><span>(</span></div>
+                <div class="neomprphism-btn neo-btn-pink num"><span>)</span></div>
+                <!-- × -->
+                <div class="neomprphism-btn neo-btn-purple sign"><span>&#215;</span></div>
+                <!-- √ -->
+                <div class="neomprphism-btn neo-btn-pink" id="sqrt"><span>&#8730;</span></div>
+                <!-- ⁒ -->
+                <div class="neomprphism-btn neo-btn-pink sign" id="percent"><span>&#8274;</span></div>
+                <!-- ± -->
+                <div class="neomprphism-btn neo-btn-pink" id="negative"><span>&#177;</span></div>
+                <!-- ÷ -->
+                <div class="neomprphism-btn neo-btn-purple sign"><span>&#247;</span></div>
+                <div class="neomprphism-btn neo-btn-white num"><span>7</span></div>
+                <div class="neomprphism-btn neo-btn-white num"><span>8</span></div>
+                <div class="neomprphism-btn neo-btn-white num"><span>9</span></div>
+                <!-- - -->
+                <div class="neomprphism-btn neo-btn-purple sign"><span>&#8722;</span></div>
+                <div class="neomprphism-btn neo-btn-white num"><span>4</span></div>
+                <div class="neomprphism-btn neo-btn-white num"><span>5</span></div>
+                <div class="neomprphism-btn neo-btn-white num"><span>6</span></div>
+                <!-- + -->
+                <div class="neomprphism-btn neo-btn-purple sign"><span>&#43;</span></div>
+                <div class="neomprphism-btn neo-btn-white num"><span>1</span></div>
+                <div class="neomprphism-btn neo-btn-white num"><span>2</span></div>
+                <div class="neomprphism-btn neo-btn-white num"><span>3</span></div>
+                <!-- = -->
+                <div class=" neo-btn-blue" id="equal"><span><p>&#8332;</p></span></div>
+                <div class="neomprphism-btn neo-btn-white" id="dot"><span>.</span></div>
+                <div class="neomprphism-btn neo-btn-white num"><span>0</span></div>
+                <!-- backspace -->
+                <div class="neomprphism-btn neo-btn-grey" id="backspace"><i class="fas fa-backspace"></i></div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,81 @@
+.calculator {
+    margin-top: 0.5rem;
+    width: 25rem;
+    height: 45rem;
+    border-radius: 2rem;
+    background-color: rgb(224, 224, 224);
+}
+
+.calculate-view {
+    height: 9rem;
+    font-size: 2rem;
+    overflow-y: auto;
+    overflow-wrap: break-word;
+}
+
+.calculator-keyboard {
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: repeat(7, 15%);
+}
+
+.calculator-keyboard div {
+    margin: 0.7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 2rem;
+}
+
+.neomprphism-btn {
+    width: 4.5rem;
+    height: 4.5rem;
+    border-radius: 100%;
+}
+
+.neo-btn-yellow {
+    background-color: #ffa408;
+    box-shadow: 0.15rem 0.15rem 0.25rem #ffcd70, -0.15rem -0.15rem 0.25rem #fff;
+    color: #fff;
+}
+
+.neo-btn-pink {
+    background-color: #f3bdd3;
+    box-shadow: 0.15rem 0.15rem 0.25rem #ec7aaa, -0.15rem -0.15rem 0.25rem #fff;
+    color: #eb6ca1;
+}
+
+.neo-btn-purple {
+    background-color: #b6a3cc;
+    box-shadow: 0.15rem 0.15rem 0.25rem #7134ba, -0.15rem -0.15rem 0.25rem #fff;
+    color: #6630a7;
+}
+
+.neo-btn-blue {
+    background-color: #00d2d6;
+    box-shadow: 0.15rem 0.15rem 0.25rem #6ad9db, -0.15rem -0.15rem 0.25rem #fff;
+    color: #fff;
+}
+
+.neo-btn-white {
+    background-color: #e0e0e0;
+    box-shadow: 0.15rem 0.15rem 0.25rem #b9b9b9, -0.15rem -0.15rem 0.25rem #fff;
+    color: #858585;
+}
+
+.neo-btn-grey {
+    background-color: #d1d1d1;
+    box-shadow: 0.15rem 0.15rem 0.25rem #c7c7c7, -0.15rem -0.15rem 0.25rem #fff;
+    color: #858585;
+}
+
+#equal {
+    border-radius: 3rem;
+    grid-row-start: 5;
+    grid-row-end: 7;
+    grid-column-start: 4;
+    grid-column-end: 5;
+    width: 5rem;
+    height: 9.8rem;
+}
