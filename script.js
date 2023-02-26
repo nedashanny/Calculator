@@ -5,8 +5,9 @@ let resetButton = document.querySelector('#reset');
 let backspaceButton = document.querySelector('#backspace');
 let sqrtButton = document.querySelector('#sqrt');
 let negativeButton = document.querySelector('#negative');
-
+let equalButton = document.querySelector('#equal');
 let calView = document.querySelector('.calculate-view span');
+let percentButton = document.querySelector('#percent');
 
 let calText;
 let haveDot = false;
@@ -54,6 +55,34 @@ sqrtButton.addEventListener('click', e => {
 //make number negative
 negativeButton.addEventListener('click', e => {
     calText = calView.textContent = calView.textContent + '-';
+});
+
+//calculate math phrase
+equalButton.addEventListener('click', e => {
+    result();
+});
+
+//this method change math phrase to a phrase that can execute by eval method
+function result() {
+    calText = calText.replaceAll('+', '+');
+    calText = calText.replaceAll('−', '-');
+    calText = calText.replaceAll('÷', '/');
+    calText = calText.replaceAll('×', '*');
+    calText = calText.replaceAll('₌', '');
+    calText = calText.replaceAll('⁒', '/100');
+    calText = calText.replaceAll('√', 'Math.sqrt');
+    try {
+        let result = eval(calText);
+        calView.textContent = result;
+
+    } catch (err) {
+        calView.textContent = 'Wrong math phrase.';
+    }
+}
+
+// calculate percent
+percentButton.addEventListener('click', e => {
+    result();
 });
 
 //this method write the button text on calView
